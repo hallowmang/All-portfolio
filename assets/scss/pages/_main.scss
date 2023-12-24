@@ -151,7 +151,8 @@
         font-size: 4.5vw;        
       }
       @include mobile{
-        font-size: 4.8vw;        
+        font-size: 4.5vw;
+        padding: 0 3vw;        
       }
       span{
         display: block;
@@ -440,7 +441,7 @@
           height: 35%;
         }
         @include mobile{
-          height: 30%;
+          height: 40%;
         }
         h3 {
           span {
@@ -460,7 +461,7 @@
           height: 63vw;
         }
         @include mobile{
-          height: 70vw;
+          height: 90vw;
         }
         .slider-list{
           width: 100%;
@@ -486,7 +487,7 @@
               padding: 1.5rem;
             }
             @include mobile{
-              width: 65%;
+              width: 80%;
               padding: 1.5rem;              
             }
             .slide-top {
@@ -521,7 +522,7 @@
                 font-size: 2vw;
               }
               @include mobile {
-                font-size: 2.2vw;
+                font-size: 3vw;
               }
             }
           }

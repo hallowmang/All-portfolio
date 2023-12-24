@@ -57,6 +57,7 @@ h5 {
     padding: 4rem 0;
   }
   @include mobile {
+    font-size: 8.5vw;
     padding: 3rem 0;
   }
   span {
@@ -178,7 +179,7 @@ h5 {
             font-size: 1.7vw;
           }
           @include mobile {
-            font-size: 2.5vw;
+            font-size: 4vw;
           }
           span {
             font-size: 1.1vw;
@@ -189,7 +190,7 @@ h5 {
               font-size: 1.5vw;
             }
             @include mobile {
-              font-size: 2.3vw;
+              font-size: 3vw;
             }
           }
           p {
