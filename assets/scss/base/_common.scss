@@ -1,0 +1,270 @@
+html {
+  line-height: 1.25rem;
+}
+
+::selection{
+  background-color: #f7a7bb;
+  color: #fff;
+}
+
+body {
+  font-family: $font-PPNeue;
+  font-weight: 500;
+  background: #000;
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: rgba(222, 222, 222, 0.75);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-bold;
+}
+.main {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.moving-text-wrap {
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: $font-bold;
+  font-size: 8vw;
+  text-transform: uppercase;
+  padding: 5rem 0;
+  line-height: 1;
+  overflow: hidden;
+  @include desktop {
+    font-size: 9vw;
+  }
+  @include tablet {
+    padding: 4rem 0;
+  }
+  @include mobile {
+    padding: 3rem 0;
+  }
+  span {
+    color: #f7a7bb;
+  }
+}
+
+/* 프로젝트 텍스트 애니메이션 */
+@keyframes moving {
+  from {
+    /* 시작 스타일 */
+    transform: translateX(0);
+  }
+  to {
+    /* 종료 스타일 */
+    transform: translateX(-200%);
+  }
+}
+
+
+
+.project-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 1.5rem;
+
+  @include desktop {
+    height: 50vh;
+  }
+  @include tablet {
+    height: 50vh;
+  }
+  @include mobile {
+    height: 70vh;
+    margin-bottom: 2rem;
+  }
+  
+
+  .project {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 24px;
+    // background-color: aqua;
+    // margin-bottom: 200px;
+
+    &:hover{
+      .photo-grid-group{
+        .text-ani-group{
+          opacity: 1;
+          .photo-text-box{
+            animation: moving 150s linear infinite;
+            p{
+            }
+          }
+        }
+      }
+      .text-grid-group{
+        .text-grid-box{
+          .text-desc{
+            // opacity: 1;
+            // max-height: 200px; /* 적절한 높이로 변경하세요 */
+            // overflow: visible;
+          }
+          svg{
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+
+    .text-grid-group {
+      position: relative;
+      border-radius: 20px;
+      background: #fff;
+      color: #000;
+      transition: 0.3s;
+      .text-grid-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        @include desktop{
+        }
+        @include tablet {
+          padding: 30px;
+        }
+        @include mobile {
+          padding: 20px;
+        }
+        h3 {
+          font-size: 3vw;
+          text-transform: uppercase;
+          line-height: 1;
+          @include desktop{
+          }
+          @include tablet {
+            font-size: 3.2vw;
+          }
+          @include mobile {
+            font-size: 5vw;
+          }
+        }
+        .text-desc {
+          opacity: 1;
+          max-height: 100%;
+          overflow: hidden;
+          transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
+          font-family: $preten-medium;
+          font-size: 1.3vw;
+          @include desktop{
+            font-size: 1.7vw;
+          }
+          @include tablet{
+            font-size: 1.7vw;
+          }
+          @include mobile {
+            font-size: 2.5vw;
+          }
+          span {
+            font-size: 1.1vw;
+            @include desktop{
+              font-size: 1.26vw;
+            }
+            @include tablet{
+              font-size: 1.5vw;
+            }
+            @include mobile {
+              font-size: 2.3vw;
+            }
+          }
+          p {
+          }
+        }
+        svg {
+          transition: transform 0.2s;
+          @include desktop{
+            width: 30px;
+            height: 30px;
+          }
+          @include tablet {
+            transform: rotate(45deg);
+            width: 25px;
+            height: 25px;
+            margin-top: 5px;
+          }
+          @include mobile {
+            transform: rotate(45deg);
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .photo-grid-group {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      .photo-box {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .text-ani-group {
+        position: absolute;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        @include mobile {
+          opacity: 0;
+        }
+        .photo-text-box {
+          font-family: $font-bold;
+          display: flex;
+          color: #fff;
+          gap: 50px;
+          transition: 0.3s;
+          text-transform: uppercase;
+          @include mobile {
+            gap: 25px;
+          }
+          p {
+            font-size: 5vw;
+            @include mobile {
+              font-size: 7vw;
+            }
+          }
+        }
+      }
+    }
+
+    
+  }
+
+  
+}

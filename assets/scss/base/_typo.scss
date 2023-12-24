@@ -1,0 +1,45 @@
+//작성 후 _var.scss에서 사용
+// @font-face {
+//   font-family: ;
+//   src: url();
+// }
+
+@font-face {
+  font-family: 'Monument-light';
+  src: url(../fonts/MonumentExtended-Light.woff2);
+}
+
+@font-face {
+  font-family: 'Monument-bold';
+  src: url(../fonts/MonumentExtended-Bold.woff2);
+}
+
+@font-face {
+  font-family: 'Monument-ultraBold';
+  src: url(../fonts/MonumentExtended-Ultrabold.woff2);
+}
+
+@font-face {
+  font-family: 'PPNeue';
+  src: url(../fonts/PPNeueMachina-PlainMedium.woff2);
+}
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url(../fonts/Pretendard-Light.subset.woff2);
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url(../fonts/Pretendard-Regular.subset.woff2);
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url(../fonts/Pretendard-Medium.subset.woff2);
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url(../fonts/Pretendard-Bold.subset.woff2);
+}
