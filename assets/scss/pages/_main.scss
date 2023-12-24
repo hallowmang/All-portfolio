@@ -441,7 +441,7 @@
           height: 35%;
         }
         @include mobile{
-          height: 40%;
+          height: 30%;
         }
         h3 {
           span {
@@ -458,7 +458,7 @@
           height: 45vw;
         }
         @include tablet{
-          height: 63vw;
+          height: 70vw;
         }
         @include mobile{
           height: 90vw;
@@ -483,7 +483,7 @@
               width: 45%;
             }
             @include tablet{
-              width: 65%;
+              width: 75%;
               padding: 1.5rem;
             }
             @include mobile{
@@ -519,7 +519,7 @@
                 font-size: 1.5vw;
               }
               @include tablet {
-                font-size: 2vw;
+                font-size: 3vw;
               }
               @include mobile {
                 font-size: 3vw;

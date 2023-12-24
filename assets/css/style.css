@@ -175,7 +175,8 @@ h5 {
 @media (max-width: 767px) {
   .section-title {
     font-size: 8.5vw;
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 }
 .section-title span {
@@ -322,7 +323,7 @@ h5 {
 }
 @media (max-width: 767px) {
   .project-wrap .project .text-grid-group .text-grid-box .text-desc {
-    font-size: 4vw;
+    font-size: 3.7vw;
   }
 }
 .project-wrap .project .text-grid-group .text-grid-box .text-desc span {
@@ -1153,7 +1154,7 @@ h5 {
 }
 @media (max-width: 767px) {
   .main .sc-expertises .container .section-title {
-    height: 40%;
+    height: 30%;
   }
 }
 .main .sc-expertises .container .section-title h3 span {
@@ -1171,7 +1172,7 @@ h5 {
 }
 @media (max-width: 1023px) {
   .main .sc-expertises .container .slider {
-    height: 63vw;
+    height: 70vw;
   }
 }
 @media (max-width: 767px) {
@@ -1216,7 +1217,7 @@ h5 {
 }
 @media (max-width: 1023px) {
   .main .sc-expertises .container .slider .slider-list .slider-item {
-    width: 65%;
+    width: 75%;
     padding: 1.5rem;
   }
 }
@@ -1259,7 +1260,7 @@ h5 {
 }
 @media (max-width: 1023px) {
   .main .sc-expertises .container .slider .slider-list .slider-item .slide-bottom {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
 @media (max-width: 767px) {

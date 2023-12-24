@@ -58,7 +58,8 @@ h5 {
   }
   @include mobile {
     font-size: 8.5vw;
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
   span {
     color: #f7a7bb;
@@ -179,7 +180,7 @@ h5 {
             font-size: 1.7vw;
           }
           @include mobile {
-            font-size: 4vw;
+            font-size: 3.7vw;
           }
           span {
             font-size: 1.1vw;

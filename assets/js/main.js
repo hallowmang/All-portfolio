@@ -274,25 +274,14 @@ ScrollTrigger.matchMedia({
 
 
 /* 가로스크롤 */
-// gsap.to('.expertises-list',{
-//   xPercent: -700,
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: ".sc-expertises",
-//     start: "top top",
-//     end: "bottom top",
-//     pin:true,
-//     scrub: true,
-//     markers: true,
-//   }
-// });
+
 let sliderItem = $('.slider-item');
 let sliderItemWidth = sliderItem.width();
 console.log(sliderItemWidth); // 요소의 너비 출력
 
 gsap.to(sliderItem,{
   // x: () => sliderItemWidth * -10,
-  xPercent: -95 * (sliderItem.length - 1),
+  xPercent: -102 * (sliderItem.length - 1),
   ease:"none",
   scrollTrigger: {
     trigger:".sc-expertises",
