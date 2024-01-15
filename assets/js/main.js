@@ -146,13 +146,17 @@ ScrollTrigger.batch('[data-scroll-opacity]',{
   },
 })
 
-/* project 텍스트 애니메이션*/
+/* project 텍스트 페이드인 페이드아웃 애니메이션*/
 
 let arrow = ".text-grid-box .icon--arrow-up"
 
-let tiTleArray = gsap.utils.toArray(".project-wrap .project .text-grid-group h3")
+let tiTleArray = gsap.utils.toArray(".project-wrap .project .text-grid-group .title-wrap")
+
+let velogLogo = gsap.utils.toArray(".project-wrap .project .text-grid-group .title-wrap .velog-link")
+
 
 let subTitleArray = gsap.utils.toArray(".project-wrap .project .text-grid-group .text-desc")
+
 
 let arrowArray = gsap.utils.toArray(".text-grid-box .icon--arrow-up")
 
@@ -170,8 +174,28 @@ tiTleArray.forEach((title) => {
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: title.closest(".project"),
-      start: "40% 60%",
-      end: "40% 60%",
+      start: "40% 70%",
+      end: "40% 70%",
+      toggleActions: "play none none reverse"
+    }
+  });
+});
+
+velogLogo.forEach((velog) => {
+  gsap.set(velog, {
+    opacity: 0,
+    x: 20,
+  });
+
+  gsap.to(velog, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: velog.closest(".project"),
+      start: "40% 70%",
+      end: "40% 70%",
       toggleActions: "play none none reverse"
     }
   });
@@ -190,8 +214,8 @@ subTitleArray.forEach((subTitle)=>{
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: subTitle.closest(".project"),
-      start: "50% 60%",
-      end: "50% 60%",
+      start: "50% 70%",
+      end: "50% 70%",
       toggleActions: "play none none reverse"
     }
   });
@@ -210,8 +234,8 @@ arrowArray.forEach((arrow)=>{
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: arrow.closest(".project"),
-      start: "60% 60%",
-      end: "60% 60%",
+      start: "60% 70%",
+      end: "60% 70%",
       toggleActions: "play none none reverse"
     }
   })

@@ -288,9 +288,7 @@
             width: 50%;
             .text-grid-box{
               h3{
-                @include tablet{
-                  transform: translateY(-250%);
-                }
+                
               }
             }
             
@@ -314,9 +312,7 @@
           width: 30%;
           .text-grid-box{
             h3{
-              @include tablet{
-                transform: translateY(-370%);
-              }
+              
             }
           }
           
@@ -337,9 +333,7 @@
           width: 30%;
           .text-grid-box{
             h3{
-              @include tablet{
-                transform: translateY(-370%);
-              }
+              
             }
           }
           
@@ -411,9 +405,7 @@
             .forner-text-group{
               flex: 1;
               h3{
-                @include tablet{
-                  transform: translateY(-370%);
-                }
+                
               }   
               @include mobile{
                 width: 100%;
