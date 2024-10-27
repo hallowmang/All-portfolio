@@ -458,6 +458,13 @@
               opacity: 1;
             }
           }
+          &:last-child{
+            span{
+              @include mobile {
+                color: #000;
+              }
+            }
+          }
         }
       }
     }
@@ -486,7 +493,7 @@
             max-height: fit-content;
             @include mobile {
               border: 4px solid #fff;
-              max-width: 250px;
+              max-width: 200px;
             }
           }
         }

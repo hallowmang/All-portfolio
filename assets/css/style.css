@@ -1217,6 +1217,11 @@ h5 {
     opacity: 1;
   }
 }
+@media (max-width: 767px) {
+  .main .sc-project .concierge-wrap .concierge-project .concierge-photo-group:last-child span {
+    color: #000;
+  }
+}
 .main .sc-project .laypact-wrap .laypact-text-group {
   -webkit-box-flex: 0.331;
       -ms-flex: 0.331;
@@ -1266,7 +1271,7 @@ h5 {
 @media (max-width: 767px) {
   .main .sc-project .laypact-wrap .laypact-photo-group .photo-box img {
     border: 4px solid #fff;
-    max-width: 250px;
+    max-width: 200px;
   }
 }
 .main .sc-project .mobis-photo-group {
