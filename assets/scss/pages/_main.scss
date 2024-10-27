@@ -351,69 +351,154 @@
           }
         }
       }
-
-      /* forner 프로젝트 */
-      &.forner-project{
-        display: flex;
-        gap: 30px;        
-        @include mobile{
-          flex-direction: column;
+    }
+    /* forner 프로젝트 (byredo) */
+    .forner-project{
+      display: flex;
+      gap: 24px;        
+      @include mobile{
+        flex-direction: column;
+        height: 100%;
+      }
+      &:hover{
+        .forner-right{
+          .forner-photo-group{
+            
+            .text-ani-group{
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .forner-group{          
+        flex: 1;
+        .forner-right{
+          display: flex;
+          height: 100%;
+          gap: 24px;
+          flex: 1;
+          @include desktop{
+            width: 62%;
+          }
+          @include mobile{
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+          }
+          .forner-photo-group{
+            position: relative;
+            width: 40%;
+            @include mobile{
+              width: 100%;
+            }
+            .photo-box{
+              width: 100%;
+            }
+            .text-ani-group{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(90deg);
+              .photo-text-box {
+              }
+            }
+          }
+          .forner-text-group{
+            flex: 1;
+            h3{
+              
+            }   
+            @include mobile{
+              width: 100%;
+            }
+          }
+          
+        }
+      }
+    }
+    /* tcast 프로젝트 */
+    .tcast-project{
+      .tcast-text-group{
+        flex: 1;
+      }
+      .tcast-photo-group{
+        flex: 1;
+      }
+    }
+    /* 컨시어지 프로젝트 */
+    .concierge-wrap{
+      align-items: flex-start;
+      height: 50vh;
+      .concierge-project{
+        @include mobile {
           height: 100%;
         }
-        &:hover{
-          .forner-right{
-            .forner-photo-group{
-              
-              .text-ani-group{
-                opacity: 1;
-              }
+        .concierge-text-group{
+          flex: 1;
+          @include mobile {
+            order: 1;
+          }
+        }
+        .concierge-photo-group{
+          flex: 0.5;
+          // @include mobile {
+          //   flex: 1;
+          // }
+          span{
+            position: absolute;
+            bottom: 15px;
+            left: 30px;
+            font-family: $font-ultra;
+            font-size: 2vw;
+            font-weight: 800;
+            @include mobile {
+              bottom: 5px;
+              left: 15px;
+              font-size: 5vw;
+              opacity: 1;
             }
           }
         }
-        .forner-group{          
-          .forner-right{
-            display: flex;
-            width: 62%;
-            height: 100%;
-            gap: 24px;
-            @include desktop{
-              width: 62%;
+      }
+    }
+    /* laypact 자사홈페이지 프로젝트*/
+    .laypact-wrap{
+      .laypact-text-group{
+        flex: 0.331;
+        @include mobile {
+          order: 1;
+          flex: 0.5;
+        }
+      }
+      .laypact-photo-group{
+        border: 1px solid #fff;
+        flex: 1;
+        @include mobile {
+          flex: 0.5;
+        }
+        .photo-box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            border: 10px solid #fff;
+            max-width: 1500px;
+            max-height: fit-content;
+            @include mobile {
+              border: 4px solid #fff;
+              max-width: 250px;
             }
-            @include mobile{
-              flex-direction: column;
-              width: 100%;
-              height: auto;
-            }
-            .forner-photo-group{
-              position: relative;
-              width: 40%;
-              @include mobile{
-                width: 100%;
-              }
-              .photo-box{
-                width: 100%;
-              }
-              .text-ani-group{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) rotate(90deg);
-                .photo-text-box {
-                }
-              }
-            }
-            .forner-text-group{
-              flex: 1;
-              h3{
-                
-              }   
-              @include mobile{
-                width: 100%;
-              }
-            }
-            
           }
         }
+      }
+    }
+    /* 현대모비스 프로젝트 */
+    .mobis-photo-group{
+      width: 70%;
+      flex: auto;
+      @include mobile {
+        width: 100%;
+        height: 60%;
       }
     }
   }
