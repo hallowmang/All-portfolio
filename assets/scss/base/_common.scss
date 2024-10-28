@@ -112,6 +112,9 @@ h5 {
       .photo-grid-group{
         .text-ani-group{
           opacity: 1;
+          @include mobile {
+            opacity: 0;
+          }
           .photo-text-box{
             animation: moving 150s linear infinite;
             p{
@@ -271,7 +274,7 @@ h5 {
         opacity: 0;
         transition: opacity 0.3s ease;
         @include mobile {
-          opacity: 0;
+          display: none;
         }
         .photo-text-box {
           font-family: $font-bold;

@@ -429,6 +429,9 @@
     .concierge-wrap{
       align-items: flex-start;
       height: 50vh;
+      @include tablet {
+        height: 40vh;
+      }
       .concierge-project{
         @include mobile {
           height: 100%;
@@ -441,9 +444,6 @@
         }
         .concierge-photo-group{
           flex: 0.5;
-          // @include mobile {
-          //   flex: 1;
-          // }
           span{
             position: absolute;
             bottom: 15px;
@@ -451,10 +451,13 @@
             font-family: $font-ultra;
             font-size: 2vw;
             font-weight: 800;
-            @include mobile {
+            @include tablet {
               bottom: 5px;
               left: 15px;
-              font-size: 5vw;
+              font-size: 3vw;
+            }
+            @include mobile {
+              font-size: 4.5vw;
               opacity: 1;
             }
           }
@@ -489,11 +492,18 @@
           justify-content: center;
           img{
             border: 10px solid #fff;
-            max-width: 1500px;
+            max-width: 1300px;
             max-height: fit-content;
+            @include desktop {
+              border: 7px solid #fff;
+              max-width: 700px;
+            }
+            @include tablet {
+              max-width: 500px;
+            }
             @include mobile {
               border: 4px solid #fff;
-              max-width: 200px;
+              max-width: 250px;
             }
           }
         }

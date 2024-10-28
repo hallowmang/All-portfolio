@@ -251,6 +251,11 @@ h5 {
 .project-wrap .project:hover .photo-grid-group .text-ani-group {
   opacity: 1;
 }
+@media (max-width: 767px) {
+  .project-wrap .project:hover .photo-grid-group .text-ani-group {
+    opacity: 0;
+  }
+}
 .project-wrap .project:hover .photo-grid-group .text-ani-group .photo-text-box {
   -webkit-animation: moving 150s linear infinite;
           animation: moving 150s linear infinite;
@@ -448,7 +453,7 @@ h5 {
 }
 @media (max-width: 767px) {
   .project-wrap .project .photo-grid-group .text-ani-group {
-    opacity: 0;
+    display: none;
   }
 }
 .project-wrap .project .photo-grid-group .text-ani-group .photo-text-box {
@@ -1179,6 +1184,11 @@ h5 {
           align-items: flex-start;
   height: 50vh;
 }
+@media (max-width: 1023px) {
+  .main .sc-project .concierge-wrap {
+    height: 40vh;
+  }
+}
 @media (max-width: 767px) {
   .main .sc-project .concierge-wrap .concierge-project {
     height: 100%;
@@ -1209,11 +1219,16 @@ h5 {
   font-size: 2vw;
   font-weight: 800;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .main .sc-project .concierge-wrap .concierge-project .concierge-photo-group span {
     bottom: 5px;
     left: 15px;
-    font-size: 5vw;
+    font-size: 3vw;
+  }
+}
+@media (max-width: 767px) {
+  .main .sc-project .concierge-wrap .concierge-project .concierge-photo-group span {
+    font-size: 4.5vw;
     opacity: 1;
   }
 }
@@ -1263,15 +1278,26 @@ h5 {
 }
 .main .sc-project .laypact-wrap .laypact-photo-group .photo-box img {
   border: 10px solid #fff;
-  max-width: 1500px;
+  max-width: 1300px;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
 }
+@media (max-width: 1440px) {
+  .main .sc-project .laypact-wrap .laypact-photo-group .photo-box img {
+    border: 7px solid #fff;
+    max-width: 700px;
+  }
+}
+@media (max-width: 1023px) {
+  .main .sc-project .laypact-wrap .laypact-photo-group .photo-box img {
+    max-width: 500px;
+  }
+}
 @media (max-width: 767px) {
   .main .sc-project .laypact-wrap .laypact-photo-group .photo-box img {
     border: 4px solid #fff;
-    max-width: 200px;
+    max-width: 250px;
   }
 }
 .main .sc-project .mobis-photo-group {
